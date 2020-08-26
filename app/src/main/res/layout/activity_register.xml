@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Đăng kí tài khoản"
+        android:textColor="#164AE1"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextUser"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="User" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Giới tính: "
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_weight="7"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonNam"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nam" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNu"
+                android:textSize="18sp"
+                android:layout_marginStart="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nữ" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.9"
+        android:text="Register" />
+
+
+</LinearLayout>

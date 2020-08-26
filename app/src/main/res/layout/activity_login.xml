@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Đăng Nhập App Chat"
+        android:textColor="#164AE1"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextDNEmail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/editTextDNPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.9"
+        android:text="Đăng nhập" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/CH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn chưa có tài khoản?"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/DangKy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/CH"
+            android:text="Đăng ký"
+            android:textColor="#f12"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:id="@+id/textviewForgetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quên mật khẩu?"
+        android:textSize="16dp" />
+
+</LinearLayout>

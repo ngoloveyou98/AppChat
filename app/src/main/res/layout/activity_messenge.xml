@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessengeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+            app:popupTheme="@style/MenuStyle">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/appbar_layout"
+        android:layout_above="@+id/bottomSend"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:id="@+id/bottomSend"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="Aa"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/imageSend"
+            android:id="@+id/editTextSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:src="@drawable/ic_action_send"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/imageSend"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
